@@ -1,0 +1,7 @@
+#getting started with wicked-charts
+
+= General Concept =
+
+Wicked Charts does not create charts itself, but delegates the creation of the charts to the Highcharts JavaScript library. Wicked Charts provides you with two things:
+ * Java classes to define the content of a chart
+ * Components for Wicket and JSF which are able to call Highcharts to show a chart defined by you
