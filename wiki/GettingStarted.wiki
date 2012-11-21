@@ -55,13 +55,15 @@ Options options = new Options();
 }}}
 
 = Adding a Chart to your Wicket Page =
-To add a chart to a page in a Wicket application, you simply need to add a div component to your HTML page, like this:
+First, add the dependency to the current version of *wicked-charts-wicket6* or *wicked-charts-wicket15* to your classpath, depending on which version of Wicket you are using. 
+
+To add a chart to a page in a Wicket application, you need to add a div component to your HTML page, like this:
 
 {{{
 <div wicket:id="chart"/>
 }}}
 
-In your Wicket page class you simple have to create an Options object and pass it into the Chart componenten and add this component to the page. Done.
+In your Wicket page class you can then create an Options object and pass it into an instance of the Chart component and add this component to the page. Done.
 
 {{{
 Options options = new Options();
