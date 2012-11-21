@@ -1,10 +1,10 @@
 = General Concept =
 Wicked Charts does not create charts itself, but delegates the creation of the charts to the Highcharts JavaScript library. Wicked Charts provides you with two things:
  * Java classes to define the content of a chart, starting from the Options class
- * Components for Wicket and JSF which are able to call Highcharts to show a chart defined by you
+ * Components for Wicket and JSF which are able to call Highcharts to display a chart defined by you
 
 = Defining a Chart =
-To define the contents of a chart, you simply have to instantiate an Options object and use its setter methods to define the data and metadata you want. 
+To define the contents of a chart, you simply have to instantiate an Options object and use its setter methods to define the data and metadata you want. This Options object is then passed into a web component that takes care of the rendering.
 
 The following example creates a line chart displaying the months from January to December on the X-Axis and the average temperature in this month that has been measured in Tokyo and New York.
 
