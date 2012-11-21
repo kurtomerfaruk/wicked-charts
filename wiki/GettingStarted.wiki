@@ -8,7 +8,7 @@ To define the contents of a chart, you simply have to instantiate an Options obj
 
 An example:
 
-{{
+{{{
 Options options = new Options();
 
     options
@@ -52,4 +52,4 @@ Options options = new Options();
                 Arrays
                     .asList(new Number[] { -0.2, 0.8, 5.7, 11.3, 17.0, 22.0,
                         24.8, 24.1, 20.1, 14.1, 8.6, 2.5 })));
-}}
+}}}
