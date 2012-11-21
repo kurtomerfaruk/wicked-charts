@@ -75,7 +75,7 @@ add(new Chart("chart", options));
 = Adding a Chart to your JSF Page =
 First, add the dependency to the current version of *wicked-charts-jsf21* to your classpath. 
 
-The following example shows some variations of how you can add a chart to your JSF page. For a description of all properties of the <wc:chart/>-component, see the setter methods of the <a href="http://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/UIChart.html">UIChart</a> class.
+The following example shows some variations of how you can add a chart to your JSF page. For a description of all properties of the `<wc:chart/>`-component, see the setter methods of the <a href="http://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/UIChart.html">UIChart</a> class.
 
 The Java class behind "myBean" must provide the Options object you want to have displayed.
 
