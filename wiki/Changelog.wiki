@@ -7,6 +7,8 @@
  * added convenience vararg methods to all series classes
  * included the showcase themes into the library
  * you can define more than one X-Axis and Y-Axis now. Getter Methods in the Options class have been changed to get a list of Axis objects instead of getting a single Axis. Methods addxAxis and addyAxis have been added.
+ * added many more charts to the showcase, and with them some more options to support new Highcharts features
+ * Split the project up into several more artifacts to better manage the dependencies
 
 = wicket-charts 1.2.1 =
  * Note that this release is not yet published in Maven central, so you have to download it <a href="http://code.google.com/p/wicket-charts/downloads/list">here</a> 
