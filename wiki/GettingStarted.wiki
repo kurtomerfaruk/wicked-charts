@@ -71,3 +71,8 @@ options.setTitle(new Title("My Chart"));
 ... // add any chart configuration you like, see above
 add(new Chart("chart", options));
 }}}
+
+= Adding a Chart to your JSF Page =
+First, add the dependency to the current version of *wicked-charts-jsf21* to your classpath. 
+
+To add a chart to your JSF page, 
