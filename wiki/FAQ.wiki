@@ -1,4 +1,4 @@
 = Frequently Asked Questions =
 
 ==How can I set a Color explicitly to (javascript) null?==
-See java class NullColor.
+See java class <a href="http://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/color/NullColor.html">NullColor</a>.
