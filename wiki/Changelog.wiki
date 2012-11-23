@@ -1,4 +1,7 @@
-#summary List of changes from version to version.
+
+
+= wicked-charts 1.3.1 (not yet released) =
+ * changed the scope of Wicket dependencies in wicked-charts-wicket6 and wicket-charts-wicket15 to "provided"
 
 = wicked-charts 1.3.0 =
  * added JSF support, hence the name switched from wicket-charts to wicked-charts
