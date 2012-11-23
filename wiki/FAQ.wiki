@@ -1,4 +1,11 @@
 = Frequently Asked Questions =
 
+==Highcharts has a different license than wicked-charts. Is that a problem?==
+The Highcharts JS library is not shipped with wicked-charts. wicked-charts simply references the publicly available JS library from highcharts.com. If you want to use wicked-charts for commercial projects, consult http://shop.highsoft.com/highcharts.html and buy a license.
+
+==The javascript files for the JQuery and Highcharts library are loaded from the web by default. How can I use my own versions of these javascript files?==
+
+Simply call `JavaScriptResourceRegistry.setJQueryReference(...)` from the init() method of your wicket application and provide a new URL or a reference to a javascript file in your own packages.
+
 ==How can I set a Color explicitly to (javascript) null?==
 See java class <a href="http://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/color/NullColor.html">NullColor</a>.
