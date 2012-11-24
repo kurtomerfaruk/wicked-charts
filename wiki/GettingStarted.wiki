@@ -1,3 +1,4 @@
+#labels Featured
 = General Concept =
 Wicked Charts does not create charts itself, but delegates the creation of the charts to the Highcharts JavaScript library. Wicked Charts provides you with two things:
  * Java classes to define the content of a chart, starting from the Options class
