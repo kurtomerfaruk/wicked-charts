@@ -9,3 +9,6 @@ Simply call `JavaScriptResourceRegistry.setJQueryReference(...)` from the init()
 
 ==How can I set a Color explicitly to (javascript) null?==
 See java class <a href="http://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/color/NullColor.html">NullColor</a>.
+
+== What browsers are supported by wicked-charts? ==
+Since wicked-charts delegates the task of rendering the charts to Highcharts, wicked-charts supports the same browsers as Highcharts. See the <a href="http://www.highcharts.com/documentation/compatibility>Highcharts compatibility tables</a>.
