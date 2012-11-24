@@ -12,3 +12,6 @@ See java class <a href="http://wicked-charts.googlecode.com/svn/trunk/wicked-cha
 
 == What browsers are supported by wicked-charts? ==
 Since wicked-charts delegates the task of rendering the charts to Highcharts, wicked-charts supports the same browsers as Highcharts. See the <a href="http://www.highcharts.com/documentation/compatibility>Highcharts compatibility tables</a>.
+
+== Why doesn't the showcase work with IE? ==
+The showcase relies on some Jquery-UI & CSS magic, that apparently does not work in IE. Use the following link instead for a simpler showcase that works in IE: http://wicked-charts.appspot.com/simple
