@@ -16,3 +16,6 @@ Since wicked-charts delegates the task of rendering the charts to Highcharts, wi
 
 == Why doesn't the showcase work with IE? ==
 The showcase relies on some Jquery-UI & CSS magic that apparently does not work in IE. Use the following link instead for a simpler showcase that works in IE: http://wicked-charts.appspot.com/simple
+
+== My Live-Data Chart does not update after a page refresh ==
+Enable development mode and check in the AJAX Debug window if you get the following error message: "Ajax request stopped because of precondition check". If, so you need to provide your chart component with an HTML "id" attribute, so the Javascript knows which component to update after the page reload.
