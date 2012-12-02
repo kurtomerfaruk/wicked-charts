@@ -7,6 +7,8 @@ Wicked Charts does not create charts itself, but delegates the creation of the c
 = Defining a Chart =
 To define the contents of a chart, you simply have to instantiate an Options object and use its setter methods to define the data and metadata you want. This Options object is then passed into a web component that takes care of the rendering.
 
+For details on the effects of each option, please refer to the <a href="http://api.highcharts.com/highcharts>Highcharts API reference</a>. The naming of the options was adopted from there. If you come across an Highcharts option that Wicked Charts doesn't support yet, please <a href="http://code.google.com/p/wicked-charts/issues/list">create an issue</a>.
+
 The following example creates a line chart displaying the months from January to December on the X-Axis and the average temperature in this month that has been measured in Tokyo and New York.
 
 {{{
