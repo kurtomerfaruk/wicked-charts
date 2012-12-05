@@ -4,6 +4,7 @@
  * added percentageSuffix, percentagePrefix, totalSuffix, totalPrefix, totalDecimals to Tooltip
  * fixed a bug that produced 404 errors since "drilldown.js" was not included in the jar
  * added gauge chart type
+ * added RedirectFunction as convenience class for creating links to other pages from within a chart
 
 = wicked-charts 1.3.0 =
  * added JSF support, hence the name switched from wicket-charts to wicked-charts
