@@ -4,11 +4,11 @@ The following tables gives an overview of the features of Wicked Charts and whic
 
 || *Feature* || *wicked-charts-wicket6* || *wicked-charts-wicket15* || *wicked-charts-jsf21 ||
 || [Features#Basic_Charts Basic Charts] || yes || yes || yes ||
-|| Advanced Charts || yes || yes || (yes) ||
-|| Live Updating Charts || yes || no || no ||
-|| Drilldown || yes || yes || no ||
-|| Ajax Updatable Charts || yes || yes || no ||
-|| Links on Points || yes || yes || yes ||
-|| Global Configuration || no || no || no ||
+|| [Features#Advanced_Charts Advanced Charts] || yes || yes || (yes) ||
+|| [Features#Live_Updating_Charts Live Updating Charts] || yes || no || no ||
+|| [Features#Drilldown Drilldown] || yes || yes || no ||
+|| [Features#Ajax_Updatable_Charts Ajax Updatable Charts] || yes || yes || no ||
+|| [Features#Links_on_Points Links on Points]] || yes || yes || yes ||
+|| [Features#Global_Configuration Global Configuration] || no || no || no ||
 
 = Basic Charts =
