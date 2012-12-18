@@ -9,6 +9,7 @@ The following tables gives an overview of the features of Wicked Charts and whic
 || [Features#Drilldown Drilldown] || yes || yes || no ||
 || [Features#Ajax_Updatable_Charts Ajax Updatable Charts] || yes || yes || no ||
 || [Features#Links_on_Points Links on Points]] || yes || yes || yes ||
-|| [Features#Global_Configuration Global Configuration] || no || no || no ||
+|| [Features#Global_Configuration Global Configuration] || no || no || no||
+|| [Features#Override_Jquery_Version Override JQuery Version] || yes || yes || no ||
 
 = Basic Charts =
