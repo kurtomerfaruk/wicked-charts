@@ -4,6 +4,7 @@
  * fixed issue 3: automatically include highcharts-more.js for gauge charts
  * fixed  issue 6: added support for global options for wicket15 and wicket6
  * fixed issue 5: LiveDataSeries.update() may return null and thus skip an update interval
+ * moved some (internal) classes to other packages to reduce package cycles
 
 = wicked-charts 1.3.1 (2012-12-06) =
  * changed the scope of Wicket dependencies in wicked-charts-wicket6 and wicket-charts-wicket15 to "provided"
