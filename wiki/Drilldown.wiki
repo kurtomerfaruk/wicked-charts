@@ -4,7 +4,7 @@
 
 The term "drilldown" actually defines the act of moving from a general chart to a more specific chart that shows more detailed information that the one before. Here, it simply means clicking on a chart with the result that the chart changes its content. Technically, it means that the [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/Options.html Options] of the chart are exchanged when the user clicks on a certain point of the chart.
 
-For each point in a chart, drilldown can be activated separately, by adding a [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/drilldown/DrilldownPoint.html DrilldownPoint] instead of a normal [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/drilldown/Point.html Point] to a series:
+For each point in a chart, drilldown can be activated separately, by adding a [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/drilldown/DrilldownPoint.html DrilldownPoint] instead of a normal [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/series/Point.html Point] to a series:
 
 {{{
 // define the options to appear initially
