@@ -1,0 +1,48 @@
+#labels basic,chart,type,definition,SeriesType
+= Basic Chart Types =
+
+Highcharts and thus Wicked Charts support a set of different chart types that are listed in the [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/SeriesType.html SeriesType] enumeration. Basic chart types only need the file highcharts.js to work properly while advanced charts additionally need the file highcharts_more.js to work.
+
+For an example of how to create a basic charts with Wicket and JSF please consult the [Getting Started] page.
+
+The basic chart types are:
+ * area charts
+ * area spline charts
+ * column charts
+ * bar charts 
+ * line charts
+ * pie charts
+ * scatter charts
+ * spline charts
+ * any combination of the above (see example "Column, line and pie" in the [http://wicked-charts.appspot.com Showcase]
+
+All chart types and the java code needed to create them can be viewed online in the [http://wicked-charts.appspot.com Showcase].
+
+== Defining the chart type globally ==
+If you want all series within your chart to have the same chart type, you can define the type in the [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/ChartOptions.html ChartOptions] of a chart:
+
+{{{
+options.setChartOptions(new ChartOptions()
+  .setType(SeriesType.AREA));
+}}}
+
+== Defining the chart type for each series ==
+If you have more than one series in a chart that are supposed to be of a different type, you can set the type for each [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/series/Series.html Series] separately:
+
+{{{
+options.addSeries(new SimpleSeries()
+  .setType(SeriesType.AREA)
+  .setData(1,2,3));
+
+options.addSeries(new SimpleSeries()
+  .setType(SeriesType.LINE)
+  .setData(1,2,3));
+}}}
+
+
+== Using Wicket ==
+You have nothing to care about, since the Wicket components take care of loading the correct javascript files needed for the chart types.
+
+== Using JSF ==
+You have to include the following javascript files manually into your page:
+ * http://code.highcharts.com/highcharts.js
