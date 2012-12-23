@@ -31,6 +31,7 @@ The basic chart types are:
 
 All chart types and the java code needed to create them can be viewed online in the [http://wicked-charts.appspot.com Showcase].
 
+== Defining the chart type globally ==
 If you want all series within your chart to have the same chart type, you can define the type in the [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/ChartOptions.html ChartOptions] of a chart:
 
 {{{
@@ -38,6 +39,7 @@ options.setChartOptions(new ChartOptions()
   .setType(SeriesType.AREA));
 }}}
 
+== Defining the chart type for each series ==
 If you have more than one series in a chart that are supposed to be of a different type, you can set the type for each [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/series/Series.html Series] separately:
 
 {{{
@@ -51,10 +53,10 @@ options.addSeries(new SimpleSeries()
 }}}
 
 
-== wicked-charts-wicket15 & wicked-charts-wicket6==
+== Using Wicket ==
 You have nothing to care about, since the Wicket components take care of loading the correct javascript files needed for the chart types.
 
-== wicked-charts-jsf12 ==
+== Using JSF ==
 You have to include the following javascript files manually into your page:
  * http://code.highcharts.com/highcharts.js
 
@@ -68,10 +70,10 @@ The advances chart types are:
 
 All chart types and the java code needed to create them can be viewed online in the [http://wicked-charts.appspot.com Showcase].
 
-== wicked-charts-wicket15 & wicked-charts-wicket6==
+== Using Wicket ==
 You have nothing to care about, since the Wicket components take care of loading the correct javascript files needed for the chart types.
 
-== wicked-charts-jsf12 ==
+== Using JSF ==
 You have to include the following javascript files manually into your page:
  * http://code.highcharts.com/highcharts.js
  * http://code.highcharts.com/highcharts-more.js
