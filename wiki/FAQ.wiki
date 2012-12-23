@@ -28,4 +28,4 @@ Each is an implementation of Wicked Charts that provide a component for one of t
 These components can then be used in a web project using the respective framework to implement charts in an easy fashion.
 
 == Can I use Wicked Charts in a non-Java web application? ==
-No. Wicked Charts is Java. You can use the Highcharts JavaScript directly, though.
+No. Wicked Charts is Java. You can use the Highcharts JavaScript framework directly, though.
