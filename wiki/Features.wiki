@@ -8,6 +8,6 @@ The following table gives an overview of the features of Wicked Charts and which
 || [LiveUpdatingCharts Live Updating Charts] || yes || no || no ||
 || [Drilldown Drilldown] || yes || yes || no ||
 || [AjaxUpdatableCharts Ajax Updatable Charts] || yes || yes || no ||
-|| [LinksOnPoints Links on Points]] || yes || yes || yes ||
+|| [LinksOnPoints Links on Points] || yes || yes || yes ||
 || [GlobalConfiguration Global Configuration] || yes || yes || no||
 || [DifferentJQueryAndHighchartsVersion	 Override JQuery Version] || yes || yes || no ||
