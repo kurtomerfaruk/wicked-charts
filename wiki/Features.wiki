@@ -5,9 +5,9 @@ The following table gives an overview of the features of Wicked Charts and which
 || *Feature* || *wicked-charts-wicket6* || *wicked-charts-wicket15* || *wicked-charts-jsf21 ||
 || [BasicChartTypes Basic Chart Types] || yes || yes || yes ||
 || [AdvancedChartTypes Advanced Chart Types] || yes || yes || yes ||
-|| [Features#Live_Updating_Charts Live Updating Charts] || yes || no || no ||
-|| [Features#Drilldown Drilldown] || yes || yes || no ||
-|| [Features#Ajax_Updatable_Charts Ajax Updatable Charts] || yes || yes || no ||
-|| [Features#Links_on_Points Links on Points]] || yes || yes || yes ||
-|| [Features#Global_Configuration Global Configuration] || no || no || no||
-|| [Features#Override_Jquery_Version Override JQuery Version] || yes || yes || no ||
+|| [LiveUpdatingCharts Live Updating Charts] || yes || no || no ||
+|| [Drilldown Drilldown] || yes || yes || no ||
+|| [AjaxUpdatableCharts Ajax Updatable Charts] || yes || yes || no ||
+|| [LinksOnPoints Links on Points]] || yes || yes || yes ||
+|| [GlobalConfiguration Global Configuration] || no || no || no||
+|| [OverrideJqueryVersion Override JQuery Version] || yes || yes || no ||
