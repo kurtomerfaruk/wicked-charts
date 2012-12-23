@@ -1,6 +1,5 @@
 =Live Updating Charts=
 
-----
 *Supported by*: wicked-charts-wicket6
 ----
 
