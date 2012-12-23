@@ -3,8 +3,8 @@
 The following table gives an overview of the features of Wicked Charts and which features are supported for which GUI framework. Each feature is described in a separate section below.
 
 || *Feature* || *wicked-charts-wicket6* || *wicked-charts-wicket15* || *wicked-charts-jsf21 ||
-|| [Features#Basic_Charts Basic Charts] || yes || yes || yes ||
-|| [Features#Advanced_Charts Advanced Charts] || yes || yes || (yes) ||
+|| [Features#Basic_Chart_Types Basic Chart Types] || yes || yes || yes ||
+|| [Features#Advanced_Chart_Types Advanced Chart Types] || yes || yes || (yes) ||
 || [Features#Live_Updating_Charts Live Updating Charts] || yes || no || no ||
 || [Features#Drilldown Drilldown] || yes || yes || no ||
 || [Features#Ajax_Updatable_Charts Ajax Updatable Charts] || yes || yes || no ||
@@ -12,14 +12,19 @@ The following table gives an overview of the features of Wicked Charts and which
 || [Features#Global_Configuration Global Configuration] || no || no || no||
 || [Features#Override_Jquery_Version Override JQuery Version] || yes || yes || no ||
 
-= Basic Charts =
+= Basic Chart Types =
 
 Highcharts and thus Wicked Charts support a set of different chart types that are listed in the [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/SeriesType.html SeriesType] enumeration. Basic chart types only need the file highcharts.js to work properly while advanced charts additionally need the file highcharts_more.js to work.
 
 For an example of how to create a basic charts with Wicket and JSF please consult the [Getting Started] page.
 
+The basic chart types are:
+
+
 == wicked-charts-wicket15 & wicked-charts-wicket6==
 Basic charts are all supported by the wicket implementations of Wicked Charts. The needed javascript files are automatically added to your page when you add the Chart component to your page.
 
 == wicked-charts-jsf12 ==
-When using JSF you have to include the file highcharts.js manually to your page. You can grab the file at http://code.highcharts.com/.
+When using JSF you currently have to include the file highcharts.js manually to your page. You can grab the file at http://code.highcharts.com/.
+
+= Advanced Chart Types =
