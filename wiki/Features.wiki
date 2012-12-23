@@ -31,6 +31,25 @@ The basic chart types are:
 
 All chart types and the java code needed to create them can be viewed online in the [http://wicked-charts.appspot.com Showcase].
 
+If you want all series within your chart to have the same chart type, you can define the type in the [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/ChartOptions.html ChartOptions] of a chart:
+
+{{{
+options.setChartOptions(new ChartOptions()
+  .setType(SeriesType.AREA));
+}}}
+
+If you have more than one series in a chart that are supposed to be of a different type, you can set the type for each [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/series/Series.html Series] separately:
+
+{{{
+options.addSeries(new SimpleSeries()
+  .setType(SeriesType.AREA)
+  .setData(1,2,3));
+
+options.addSeries(new SimpleSeries()
+  .setType(SeriesType.LINE)
+  .setData(1,2,3));
+}}}
+
 
 == wicked-charts-wicket15 & wicked-charts-wicket6==
 You have nothing to care about, since the Wicket components take care of loading the correct javascript files needed for the chart types.
