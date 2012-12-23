@@ -1,5 +1,9 @@
 #labels advanced,chart,type,SeriesType
 = Advanced Chart Types =
+
+*Supported by:* _wicked-charts-wicket15, wicked-charts-wicket6, wicked-charts-jsf21_
+----
+
 The advances chart types need the javascript file highcharts_more.js to work.
 
 The advances chart types are:
