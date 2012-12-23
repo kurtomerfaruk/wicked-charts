@@ -3,4 +3,17 @@
 *Supported by*: _wicked-charts-wicket6_
 ----
 
-You can configure a chart to regularly and automatically add a new point to the chart. This currently works only for charts containing a single series. You can use this feature by adding a [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/livedata/LiveDataSeries.html LiveDataSeries] to your chart:
+You can configure a chart to regularly and automatically add a new point to the chart. This currently works only for charts containing a single series. You can use this feature by adding a [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/livedata/LiveDataSeries.html LiveDataSeries] to your chart.
+
+The following code will add a series to your chart that will be updated each second with the current timestamp as x value and a random value between 0 and 1 as y value.
+
+{{{
+LiveDataSeries series = new LiveDataSeries(options, 1000) {
+  @Override
+  public Coordinate<Number, Number> update(){
+    return new Coordinate<Number, Number>(
+      new Date().getTime(), Math.random());
+    }
+  }
+}
+}}}
