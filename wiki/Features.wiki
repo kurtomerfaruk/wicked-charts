@@ -1,6 +1,6 @@
 = Feature Overview =
 
-The following tables gives an overview of the features of Wicked Charts and which features are supported for which GUI framework. Each feature is described in a separate section below.
+The following table gives an overview of the features of Wicked Charts and which features are supported for which GUI framework. Each feature is described in a separate section below.
 
 || *Feature* || *wicked-charts-wicket6* || *wicked-charts-wicket15* || *wicked-charts-jsf21 ||
 || [Features#Basic_Charts Basic Charts] || yes || yes || yes ||
@@ -13,3 +13,5 @@ The following tables gives an overview of the features of Wicked Charts and whic
 || [Features#Override_Jquery_Version Override JQuery Version] || yes || yes || no ||
 
 = Basic Charts =
+
+Highcharts and thus Wicked Charts support a set of different chart types that are listed in the com.googlecode.wickedcharts.highcharts.options.SeriesType enumeration. Basic chart types only need the file highcharts.js to work properly while advanced charts additionally need the file highcharts_more.js to work.
