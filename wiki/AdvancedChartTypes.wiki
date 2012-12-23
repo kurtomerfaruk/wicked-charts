@@ -1,0 +1,18 @@
+#labels advanced,chart,type,SeriesType
+= Advanced Chart Types =
+The advances chart types need the javascript file highcharts_more.js to work.
+
+The advances chart types are:
+ * gauge charts 
+ * column range charts
+ * area range charts
+
+All chart types and the java code needed to create them can be viewed online in the [http://wicked-charts.appspot.com Showcase].
+
+== Using Wicket ==
+You have nothing to care about, since the Wicket components take care of loading the correct javascript files needed for the chart types.
+
+== Using JSF ==
+You have to include the following javascript files manually into your page:
+ * http://code.highcharts.com/highcharts.js
+ * http://code.highcharts.com/highcharts-more.js
