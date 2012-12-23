@@ -1,4 +1,4 @@
-= Global Configuration
+= Global Configuration =
 
 *Supported by:* _wicked-charts-wicket15, wicked-charts-wicket6_
 ----
