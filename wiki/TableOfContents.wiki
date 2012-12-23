@@ -6,6 +6,6 @@
    ** [LiveUpdatingCharts Live Updating Charts]
    ** [Drilldown Drilldown]
    ** [AjaxUpdatableCharts Ajax Updatable Charts]
-   ** [LinksOnPoints Links on Points]]
+   ** [LinksOnPoints Links on Points]
    ** [GlobalConfiguration Global Configuration]
    ** [DifferentJQueryAndHighchartsVersion Using a different version of jQuery and Highcharts]
