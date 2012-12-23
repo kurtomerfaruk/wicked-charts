@@ -1,0 +1,7 @@
+=Live Updating Charts=
+
+----
+*Supported by*: wicked-charts-wicket6
+----
+
+You can configure a chart to regularly and automatically add a new point to the chart. This currently works only for charts containing a single series. You can use this feature by adding a [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/livedata/LiveDataSeries.html LiveDataSeries] to your chart:
