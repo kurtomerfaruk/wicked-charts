@@ -19,3 +19,13 @@ The showcase relies on some Jquery-UI & CSS magic that apparently does not work 
 
 == My Live-Data Chart does not update after a page refresh ==
 Enable development mode and check in the AJAX Debug window if you get the following error message: "Ajax request stopped because of precondition check". If so, you need to provide your chart component with an HTML "id" attribute, so the Javascript knows which component to update after the page reload.
+
+== What is the difference between wicked-charts-wicket15, wicked-charts-wicket6 and wicked-charts-jsf12? ==
+Each is an implementation of Wicked Charts that provide a component for one of the following frameworks:
+ * Wicket 1.5.x
+ * Wicket 6.x
+ * JSF 2.1
+These components can then be used in a web project to implement charts in an easy fashion.
+
+== Can I use Wicked Charts in a non-Java web application? ==
+No. Wicked Charts is Java. You can use the Highcharts JavaScript directly, though.
