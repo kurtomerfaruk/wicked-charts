@@ -16,4 +16,5 @@ LiveDataSeries series = new LiveDataSeries(options, 1000) {
     }
   }
 }
+options.addSeries(series);
 }}}
