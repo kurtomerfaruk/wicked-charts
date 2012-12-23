@@ -1,15 +1,13 @@
 = Feature Overview =
 
-The following table gives an overview of the features of Wicked Charts and which features are supported for which GUI framework. Each feature is described in a separate section below.
+The following table gives an overview of the features of Wicked Charts and which features are supported for which GUI framework. Each feature is described on a separate wiki page.
 
 || *Feature* || *wicked-charts-wicket6* || *wicked-charts-wicket15* || *wicked-charts-jsf21 ||
-|| [Features#Basic_Chart_Types Basic Chart Types] || yes || yes || yes ||
-|| [Features#Advanced_Chart_Types Advanced Chart Types] || yes || yes || yes ||
+|| [BasicChartTypes Basic Chart Types] || yes || yes || yes ||
+|| [AdvancedChartTypes Advanced Chart Types] || yes || yes || yes ||
 || [Features#Live_Updating_Charts Live Updating Charts] || yes || no || no ||
 || [Features#Drilldown Drilldown] || yes || yes || no ||
 || [Features#Ajax_Updatable_Charts Ajax Updatable Charts] || yes || yes || no ||
 || [Features#Links_on_Points Links on Points]] || yes || yes || yes ||
 || [Features#Global_Configuration Global Configuration] || no || no || no||
 || [Features#Override_Jquery_Version Override JQuery Version] || yes || yes || no ||
-
-
