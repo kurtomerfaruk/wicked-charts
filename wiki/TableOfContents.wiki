@@ -1,5 +1,5 @@
  * [Changelog Changelog & Release Notes]
  * [GettingStarted Getting Started]
- * [Features Features explained]
+ * [Features Feature Overview]
    ** [BasicChartTypes Basic Chart Types]
    ** [AdvancedChartTypes Advanced Chart Types]
