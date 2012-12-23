@@ -19,3 +19,5 @@ mainOptions.addSeries(new PointSeries()
     .setY(5));
 
 }}}
+
+Please note that if you define many DrilldownPoints each pointing to different drilldown-Options in a single chart each drilldown options will be rendered into the page as JSON object. That means that the drilldown feature does not scale endlessly!
