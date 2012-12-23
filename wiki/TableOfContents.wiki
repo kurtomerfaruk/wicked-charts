@@ -8,4 +8,4 @@
    ** [AjaxUpdatableCharts Ajax Updatable Charts]
    ** [LinksOnPoints Links on Points]]
    ** [GlobalConfiguration Global Configuration]
-   ** [OverridingJqueryVersion Overriding JQuery Version]
+   ** [DifferentJQueryAndHighchartsVersion Using a different version of jQuery and Highcharts]
