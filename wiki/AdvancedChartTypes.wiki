@@ -17,3 +17,4 @@ You have to include the following javascript files manually into your page:
  * current version of jQuery
  * http://code.highcharts.com/highcharts.js
  * http://code.highcharts.com/highcharts-more.js
+ * http://code.highcharts.com/modules/exporting.js (if you have added enabled [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/ExportingOptions.html ExportingOptions] to your chart)
