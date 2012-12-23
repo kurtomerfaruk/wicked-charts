@@ -33,10 +33,11 @@ All chart types and the java code needed to create them can be viewed online in 
 
 
 == wicked-charts-wicket15 & wicked-charts-wicket6==
-Basic charts are all supported by the wicket implementations of Wicked Charts. The needed javascript files are automatically added to your page when you add the Chart component to your page.
+You have nothing to care about, since the Wicket components take care of loading the correct javascript files needed for the chart types.
 
 == wicked-charts-jsf12 ==
-When using JSF you currently have to *include the file highcharts.js manually* to your page. You can grab the file at http://code.highcharts.com/.
+You have to include the following javascript files manually into your page:
+ * http://code.highcharts.com/highcharts.js
 
 = Advanced Chart Types =
 The advances chart types need the javascript file highcharts_more.js to work.
@@ -49,7 +50,9 @@ The advances chart types are:
 All chart types and the java code needed to create them can be viewed online in the [http://wicked-charts.appspot.com Showcase].
 
 == wicked-charts-wicket15 & wicked-charts-wicket6==
-Advanced charts are all supported by the wicket implementations of Wicked Charts. The needed javascript files are automatically added to your page when you add the Chart component to your page.
+You have nothing to care about, since the Wicket components take care of loading the correct javascript files needed for the chart types.
 
 == wicked-charts-jsf12 ==
-When using JSF you currently have to *include the file highcharts_more.js manually* to your page. You can grab the file at http://code.highcharts.com/.
+You have to include the following javascript files manually into your page:
+ * http://code.highcharts.com/highcharts.js
+ * http://code.highcharts.com/highcharts-more.js
