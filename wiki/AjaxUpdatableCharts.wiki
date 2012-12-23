@@ -1,0 +1,31 @@
+= Update Charts via AJAX =
+
+*Supported by:* _wicked-charts-wicket15, wicked-charts-wicket6_
+----
+
+You can change the content of a chart via AJAX, for example when the user clicks on a link or button. Note that this feature is different from the drilldown feature, since the source of the triggering event is outside of the chart as where in the drilldown scenario, the event source is a point within the chart.
+
+== Using Wicket ==
+
+You can simply change the options of a Chart component and update the Chart component via AJAX. For example, you could implement an AjaxLink:
+
+{{{
+public class ModifyChartLink extends AjaxLink<Void>{
+
+  private Chart chart;
+
+  private Options newOptions;
+
+  public ModifyChartLink(Chart chart, Options newOptions){
+    this.chart = chart;
+    this.newOptions = newOptions;
+  }
+
+  @Override
+  public void onClick(final AjaxRequestTarget target){
+    this.chart.setOptions(newOptions);
+    target.add(this.chart);
+  }
+
+}
+}}}
