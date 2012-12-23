@@ -14,5 +14,6 @@ You have nothing to care about, since the Wicket components take care of loading
 
 == Using JSF ==
 You have to include the following javascript files manually into your page:
+ * current version of jQuery
  * http://code.highcharts.com/highcharts.js
  * http://code.highcharts.com/highcharts-more.js
