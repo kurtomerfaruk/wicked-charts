@@ -25,7 +25,7 @@ Each is an implementation of Wicked Charts that provide a component for one of t
  * Wicket 1.5.x
  * Wicket 6.x
  * JSF 2.1
-These components can then be used in a web project using the respective framework to implement charts in an easy fashion.
+These components can then be used in a web project using the respective framework to implement charts in an easy fashion. If you use Maven, you only have to include the component matching to your framework and the dependency to wicked-charts-highcharts will be added automatically.
 
 == Can I use Wicked Charts in a non-Java web application? ==
 No. Wicked Charts is Java. You can use the Highcharts JavaScript framework directly, though.
