@@ -1,5 +1,5 @@
 #labels Featured
-= wicked-charts 1.4.0 (not yet released) =
+= wicked-charts 1.4.0 (2012-12-27) =
  * *Attention*: the following classes of the public API have moved. You will have to update your imports:
    ** com.googlecode.wickedcharts.highcharts.Chart (in wicked-charts-wicket15) -> com.googlecode.wickedcharts.wicket15.highcharts.Chart
    ** com.googlecode.wickedcharts.highcharts.Chart (in wicked-charts-wicket6) -> com.googlecode.wickedcharts.wicket6.highcharts.Chart
