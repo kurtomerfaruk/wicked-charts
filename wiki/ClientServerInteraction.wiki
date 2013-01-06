@@ -3,7 +3,7 @@
 *Supported by:* _wicked-charts-wicket6_
 ----
 
-In some use cases it may be required for the server to react on a user interacting with a chart. This can be achieved by adding an [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/interaction/InteractionFunction.html InteractionFunction] to your chart options. The InteractionFunction triggers and AJAX request to the server. The server can determine which point or series has been interacted with and react accordingly.
+In some use cases it may be required for the server to react on a user interacting with a chart. This can be achieved by adding an [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/interaction/InteractionFunction.html InteractionFunction] to your chart options. The InteractionFunction triggers and AJAX request to the server. The server can read the provided [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/interaction/InteractionEvent.html InteractionEvent] object to determine which point or series has been interacted with and react accordingly.
 
 == Interacting with a series ==
 
@@ -50,7 +50,7 @@ options.add(series);
 }}}
 
 == Using Wicket 6.x ==
-Using Wicket 6, you can also access the Wicket AjaxRequestTarget on the server side to implement partial page updates. You simply have to cast the InteractionEvent to WicketInteractionEvent as follows:
+Using Wicket 6, you can also access the Wicket AjaxRequestTarget on the server side to implement partial page updates. You simply have to cast the InteractionEvent to [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/wicket6/highcharts/features/interaction/WicketInteractionEvent.html WicketInteractionEvent] as follows:
 
 {{{
 events.setClick(new InteractionFunction(options){
