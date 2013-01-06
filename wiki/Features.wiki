@@ -12,3 +12,4 @@ The following table gives an overview of the features of Wicked Charts and which
 || [LinksOnPoints Links on Points] || yes || yes || yes ||
 || [GlobalConfiguration Global Configuration] || yes || yes || no||
 || [DifferentJQueryAndHighchartsVersion	 Override JQuery Version] || yes || yes || no ||
+|| [ClientServerInteraction Client/Server Interaction]|| yes || no || no ||
