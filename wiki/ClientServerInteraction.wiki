@@ -55,12 +55,12 @@ Using Wicket 6, you can also access the Wicket AjaxRequestTarget on the server s
 {{{
 events.setClick(new InteractionFunction(options){
   @Override
-          public void onInteraction(InteractionEvent event) {
-            WicketInteractionEvent wicketEvent = (WicketInteractionEvent) event;
-            AjaxRequestTarget target = wicketEvent.getAjaxRequestTarget();
-            
-            // re-render some component
-            target.add(...);
-          }
+  public void onInteraction(InteractionEvent event) {
+    WicketInteractionEvent wicketEvent = (WicketInteractionEvent) event;
+    AjaxRequestTarget target = wicketEvent.getAjaxRequestTarget();
+           
+    // re-render some component
+    target.add(...);
+  }
 }
 }}}
