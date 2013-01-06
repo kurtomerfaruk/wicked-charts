@@ -9,4 +9,5 @@
    ** [LinksOnPoints Links on Points]
    ** [GlobalConfiguration Global Configuration]
    ** [DifferentJQueryAndHighchartsVersion Using a different version of jQuery and Highcharts]
+   ** [ClientServerInteraction Client/Server Interaction]
  * [FAQ Frequently Asked Questions]
