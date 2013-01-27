@@ -9,5 +9,6 @@
    ** [LinksOnPoints Links on Points]
    ** [GlobalConfiguration Global Configuration]
    ** [DifferentJQueryAndHighchartsVersion Using a different version of jQuery and Highcharts]
-   ** [ClientServerInteraction Client/Server Interaction]
+   ** [AJAXEvents Wicked Charts AJAX Events]
+     *** [SelectPointOrSeriesEvent Select a Point or Series]
  * [FAQ Frequently Asked Questions]
