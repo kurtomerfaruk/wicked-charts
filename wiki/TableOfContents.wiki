@@ -11,4 +11,5 @@
    * [DifferentJQueryAndHighchartsVersion Using a different version of jQuery and Highcharts]
    * [AJAXEvents Wicked Charts AJAX Events]
      * [SelectPointOrSeriesEvent Select a Point or Series]
+     * [ZoomEvent Zoom / Select a portion of a chart]
  * [FAQ Frequently Asked Questions]
