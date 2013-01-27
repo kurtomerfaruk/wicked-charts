@@ -4,6 +4,7 @@
  * issue 19 - *API Break*: LiveDataSeries.update() now returns Point instead of Coordinate so that you can for example define the color of the point. To migrate simply return a Point object with the x and y values you previously defined in the Coordinate object. See [LiveUpdatingCharts].
  * issue 13 - *API Break*: LiveDataSeries now takes in a JavaScriptParameters object. To migrate, simply ignore this parameter. By calling addJavaScriptParameters() you can now add Javascript expressions that are evaluated on the client side and transmitted to the server side update() method. See [LiveUpdatingCharts].
  * issue 12 - added functionality to react to Highcharts "selection" (zooming) event on the server side. See [ZoomEvent].
+ * issue 14 - added color attribute to State
 
 = wicked-charts 1.4.1 (2013-01-06) =
  * added client/server interaction to evaluate on the server side which point in a chart has been interacted with
