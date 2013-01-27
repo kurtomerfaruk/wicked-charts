@@ -1,5 +1,5 @@
 #labels zoom,event,AJAX,selection
-=Zoom / Select a portion of a chart
+=Zoom / Select a portion of a chart=
 
 *Supported by:* _wicked-charts-wicket6_
 ----
@@ -19,17 +19,8 @@ chartOptions
 
               @Override
               public void onSelect(final SelectionEvent event) {
-                System.out
-                    .println("Current Min Value of X-Axis: " + event
-                        .getxAxes()
-                        .get(0)
-                        .getMin());
-                System.out
-                    .println("Current Max Value of X-Axis: " + event
-                        .getxAxes()
-                        .get(0)
-                        .getMax());
-
+                 // do whatever you want with the 
+                 // data provided in the event
               }
             }));
 
