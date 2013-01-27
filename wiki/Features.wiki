@@ -1,15 +1,6 @@
 #labels Featured
-= Feature Overview =
+= Guide to the Features of Wicked Charts =
 
-The following table gives an overview of the features of Wicked Charts and which features are supported for which GUI framework. Each feature is described on a separate wiki page.
+This section of the wiki provides Guides that show how to use the features of Wicked Charts. Select the feature you want to learn about in the left-side navigation menu.
 
-|| *Feature* || *wicked-charts-wicket6* || *wicked-charts-wicket15* || *wicked-charts-jsf21 ||
-|| [BasicChartTypes Basic Chart Types] || yes || yes || yes ||
-|| [AdvancedChartTypes Advanced Chart Types] || yes || yes || yes ||
-|| [LiveUpdatingCharts Live Updating Charts] || yes || no || no ||
-|| [Drilldown Drilldown] || yes || yes || no ||
-|| [AjaxUpdatableCharts Ajax Updatable Charts] || yes || yes || no ||
-|| [LinksOnPoints Links on Points] || yes || yes || yes ||
-|| [GlobalConfiguration Global Configuration] || yes || yes || no||
-|| [DifferentJQueryAndHighchartsVersion	 Override JQuery Version] || yes || yes || no ||
-|| [ClientServerInteraction Client/Server Interaction]|| yes || no || no ||
+Note that while Wicked Charts currently can be used for JSF 2.1, Wicket 1.5.x and Wicket 6.x applications, not all features are provided for each framework. Hence, each feature guide starts with a statement which frameworks are supported. In short, the Wicket 6 component supports almost all features while the JSF component currently only supports basic features.
