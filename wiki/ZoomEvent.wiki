@@ -9,7 +9,7 @@ Highcharts and Wicked Charts support zooming (see ChartOptions.setZoomType()). T
 Highcharts provides the selection event to hook into and respond to the selection the user made (see http://api.highcharts.com/highcharts#chart.events.selection). WickedCharts provides the [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/interaction/SelectionFunction.html SelectionFunction] to respond to this event on the server side.
 
 == Using SelectionFunction ==
-The [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/interaction/SelectionFunction.html SelectionFunction] must be added to the selection Event of the https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/ChartOptions.html ChartOptions] as follows:
+The [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/interaction/SelectionFunction.html SelectionFunction] must be added to the selection Event of the [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/ChartOptions.html ChartOptions] as follows:
 
 {{{
 
