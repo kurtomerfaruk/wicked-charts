@@ -1,3 +1,4 @@
+#labels AJAX,event
 =Responding to Highcharts Events via AJAX=
 
 Highcharts provides a number of events that you can hook into, for example when a user selects a point or when he zooms in or out. Wicked Charts supports some of these events and even provides functionality to send these events to the server via AJAX, so that you can for example take some action depending on which point was selected by the user.
