@@ -1,6 +1,6 @@
  * [Changelog Changelog & Release Notes]
  * [GettingStarted Getting Started]
- * [Features Feature Overview]
+ * [Features Feature Guide]
    * [BasicChartTypes Basic Chart Types]
    * [AdvancedChartTypes Advanced Chart Types]
    * [LiveUpdatingCharts Live Updating Charts]
