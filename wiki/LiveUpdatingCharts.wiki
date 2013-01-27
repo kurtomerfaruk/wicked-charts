@@ -5,18 +5,43 @@
 
 You can configure a chart to regularly and automatically add a new point to the chart. This currently works only for charts containing a single series. You can use this feature by adding a [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/livedata/LiveDataSeries.html LiveDataSeries] to your chart.
 
-The following code will add a series to your chart that will be updated each second with the current timestamp as x value and a random value between 0 and 1 as y value.
+== Using LiveDataSeries ==
+
+The following code will add a series to your chart that will be updated each second with the current timestamp as x value and a random value between 0 and 1 as y value. The point with the specified coordinated will be colored red.
 
 {{{
 LiveDataSeries series = new LiveDataSeries(options, 1000) {
   @Override
-  public Coordinate<Number, Number> update(){
-    return new Coordinate<Number, Number>(
-      new Date().getTime(), Math.random());
-    }
+  public Point update(JavaScriptParameters parameters){
+     Point point = new Point();
+     point.setX(new Date().getTime());
+     point.setY(Math.random());
+     point.setMarker(new Marker()
+             .setFillColor(HexColor
+               .fromString("#FF0000")));
+     return point;
   }
 }
 options.addSeries(series);
 }}}
 
 Each second, the browser will generate an AJAX request to the server, calling the update() method and adding the result of this method as a point to the chart.
+
+== Adding custom Javascript parameters ==
+By calling addJavaScriptParameter() on your LiveDataSeries object, you can add javascript expression to the live update event that will be evaluated on the client side each time the chart is updated and transmitted to the server so you can use it in the server side update() method.
+
+In the following snippet when a new point is added to the chart, the javascript expresion "new Date()" will be evaluated by the browser and its value can be accessed in the update() method.
+
+{{{
+LiveDataSeries series = new LiveDataSeries(options, 1000) {
+  @Override
+  public Point update(JavaScriptParameters parameters){
+    String currentClientTime = parameters.getParameterValue("currentTime");
+    Point point = new Point();
+    // ...set point attributes...
+    return point;
+  }
+}.addJavaScriptParameter("currentTime", "new Date()");
+
+options.addSeries(series);
+}}}
