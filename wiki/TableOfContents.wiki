@@ -12,4 +12,5 @@
    * [AJAXEvents Wicked Charts AJAX Events]
      * [SelectPointOrSeriesEvent Select a Point or Series]
      * [ZoomEvent Zoom / Select a portion of a chart]
+   * [ExtendingWickedCharts Extending Wicked Charts]
  * [FAQ Frequently Asked Questions]
