@@ -1,0 +1,33 @@
+=Extending Wicked Charts=
+
+*Supported by:* _wicked-charts-wicket15_, _wicked-charts-wicket6_, _wicked-charts-jsf21_
+----
+
+Sometimes you may find some cool feature of Highcharts that is not (yet) supported by Wicked Charts because the Wicked Charts wrapper classes do not contain the fields you expect. 
+
+==Extending a wrapper class==
+Let's say for example, that Highcharts has added the (fictional) option "backgroundColor" to the "chart" javascript object (for a documentation of the Highcharts objects see http://api.highcharts.com).
+
+You can simply extend the ChartOptions class like this:
+
+{{{
+
+public class MyChartOptions extends ChartOptions {
+
+	private ColorReference backgroundColor;
+
+	@Override
+	public ChartOptions setBackgroundColor(final ColorReference backgroundColor) {
+		this.backgroundColor = backgroundColor;
+		return this;
+	}
+
+	@Override
+	public ColorReference getBackgroundColor() {
+		return this.backgroundColor;
+	}
+}
+
+}}}
+
+If you use your own ChartOptions class when constructing the options of a chart now, the new field "backgroundColor" will automatically be rendered in Wicked Chart's JSON output.
