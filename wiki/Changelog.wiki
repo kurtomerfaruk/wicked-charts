@@ -1,4 +1,11 @@
 #labels Featured
+= wicked-charts 1.4.3 (not yet released) =
+* issue 19 / issue 24 (Wicket 6) - *API Break*: LiveDataSeries.update() is passed a LiveDataUpdateEvent object containing the Wicket 6 AjaxRequestTarget to support Ajax-Updates
+* issue 20 - JSON is now always created in english locale to avoid locale problems
+* issue 21 - added support for ResetZoomButton options
+* issue 22  (Wicket 6) - re-organized javascript imports so that by default the JQuery version provided by Wicket is loaded. Also, highcharts-more.js will now be loaded from highcharts 2.3.5.
+
+
 = wicked-charts 1.4.2 (2013-01-27) =
 
  * issue 19 - *API Break*: LiveDataSeries.update() now returns Point instead of Coordinate so that you can for example define the color of the point. To migrate simply return a Point object with the x and y values you previously defined in the Coordinate object. See [LiveUpdatingCharts].
