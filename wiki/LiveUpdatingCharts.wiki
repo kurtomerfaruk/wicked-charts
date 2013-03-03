@@ -12,7 +12,7 @@ The following code will add a series to your chart that will be updated each sec
 {{{
 LiveDataSeries series = new LiveDataSeries(options, 1000) {
   @Override
-  public Point update(JavaScriptParameters parameters){
+  public Point update(LiveDataUpdateEvent event){
      Point point = new Point();
      point.setX(new Date().getTime());
      point.setY(Math.random());
@@ -35,13 +35,30 @@ In the following snippet when a new point is added to the chart, the javascript 
 {{{
 LiveDataSeries series = new LiveDataSeries(options, 1000) {
   @Override
-  public Point update(JavaScriptParameters parameters){
+  public Point update(LiveDataUpdateEvent event){
+    JavaScriptParameters parameters = event.getParameters();
     String currentClientTime = parameters.getParameterValue("currentTime");
     Point point = new Point();
     // ...set point attributes...
     return point;
   }
 }.addJavaScriptParameter("currentTime", "new Date()");
+
+options.addSeries(series);
+}}}
+
+== AJAX with Wicket 6.x ==
+Using Wicket 6.x, you can access the AjaxRequestTarget to do partial page updates:
+{{{
+LiveDataSeries series = new LiveDataSeries(options, 1000) {
+  @Override
+  public Point update(LiveDataUpdateEvent event){
+    AjaxRequestTarget target = ((WicketLiveDataUpdateEvent) event).getAjaxRequestTarget();
+    // ... use target to do partial page update ...
+    // create Point object to return...
+    return point;
+  }
+};
 
 options.addSeries(series);
 }}}
