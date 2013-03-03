@@ -50,7 +50,7 @@ series.addPoint(new Point(107).setEvents(new Events()
 options.add(series);
 }}}
 
-== Using Wicket 6.x ==
+== AJAX with Wicket 6.x ==
 Using Wicket 6, you can also access the Wicket AjaxRequestTarget on the server side to implement partial page updates. You simply have to cast the InteractionEvent to [https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/wicket6/highcharts/features/interaction/WicketInteractionEvent.html WicketInteractionEvent] as follows:
 
 {{{
