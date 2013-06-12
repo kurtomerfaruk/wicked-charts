@@ -10,6 +10,7 @@ The advances chart types are:
  * gauge charts 
  * column range charts
  * area range charts
+ * bubble charts
 
 All chart types and the java code needed to create them can be viewed online in the [http://wicked-charts.appspot.com Showcase].
 
