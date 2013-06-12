@@ -1,6 +1,6 @@
 #labels Featured
 = wicked-charts 1.5.0 (2013-06-12) =
- * issue 31: added support for Wicket 1.4 (thanks to Damiano Bolozoni for contributing the code). See the new maven artifact wicked-charts-wicket14.
+ * issue 31: added support for Wicket 1.4 (thanks to Damiano Bolzoni for contributing the code). See the new maven artifact wicked-charts-wicket14.
  * issue 29 / issue 30: fixed a NullPointerException
  * issue 32: added a meaningful runtime exception if an unsupported feature was used
  * issue 28: fixed javascript error when clicking on "reset zoom" button.
