@@ -1,12 +1,12 @@
 #labels Featured
 = wicked-charts 1.5.0 (2013-06-12) =
-* issue 31: added support for Wicket 1.4 (thanks to Damiano Bolozoni for contributing the code). See the new maven artifact wicked-charts-wicket14.
-* issue 29 / issue 30: fixed a NullPointerException
-* issue 32: added a meaningful runtime exception if an unsupported feature was used
-* issue 28: fixed javascript error when clicking on "reset zoom" button.
-* issue 26: added "enabled" flag to Labels-option
-* updated the Wicket dependency of wicked-charts-wicket6 to the current version 6.8.0
-* issue 25: updated the default Highcharts dependency to version 3.0.2 (can be changed via JavaScriptResourceRegistry)
+ * issue 31: added support for Wicket 1.4 (thanks to Damiano Bolozoni for contributing the code). See the new maven artifact wicked-charts-wicket14.
+ * issue 29 / issue 30: fixed a NullPointerException
+ * issue 32: added a meaningful runtime exception if an unsupported feature was used
+ * issue 28: fixed javascript error when clicking on "reset zoom" button.
+ * issue 26: added "enabled" flag to Labels-option
+ * updated the Wicket dependency of wicked-charts-wicket6 to the current version 6.8.0
+ * issue 25: updated the default Highcharts dependency to version 3.0.2 (can be changed via JavaScriptResourceRegistry)
 
 = wicked-charts 1.4.3 (2013-03-03) =
  * issue 19 / issue 24 (Wicket 6) - *API Break*: LiveDataSeries.update() is passed a LiveDataUpdateEvent object containing the Wicket 6 AjaxRequestTarget to support Ajax-Updates. See Guide at [LiveUpdatingCharts]
