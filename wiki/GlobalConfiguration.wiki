@@ -1,6 +1,6 @@
 = Global Configuration =
 
-*Supported by:* _wicked-charts-wicket15, wicked-charts-wicket6_
+*Supported by:* _wicked-charts-wicket14, wicked-charts-wicket15, wicked-charts-wicket6_
 ----
 
 Global configuration is a feature of Highcharts to define configration parameters globally for all charts on a page. 
