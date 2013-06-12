@@ -1,6 +1,6 @@
 = Update Charts via AJAX =
 
-*Supported by:* _wicked-charts-wicket15, wicked-charts-wicket6_
+*Supported by:* _wicked-charts-wicket14, wicked-charts-wicket15, wicked-charts-wicket6_
 ----
 
 You can change the content of a chart via AJAX, for example when the user clicks on a link or button. Note that this feature is different from the drilldown feature, since the source of the triggering event is outside of the chart as where in the drilldown scenario, the event source is a point within the chart.
