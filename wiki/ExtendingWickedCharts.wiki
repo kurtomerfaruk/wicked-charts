@@ -1,6 +1,6 @@
 =Extending Wicked Charts=
 
-*Supported by:* _wicked-charts-wicket15_, _wicked-charts-wicket6_, _wicked-charts-jsf21_
+*Supported by:* _wicked-charts-wicket14, wicked-charts-wicket15_, _wicked-charts-wicket6_, _wicked-charts-jsf21_
 ----
 
 Sometimes you may find some cool feature of Highcharts that is not (yet) supported by Wicked Charts because the Wicked Charts wrapper classes do not contain the fields you expect. 
