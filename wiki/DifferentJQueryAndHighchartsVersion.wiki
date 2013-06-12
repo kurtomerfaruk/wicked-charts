@@ -1,6 +1,6 @@
 =Using a different version of jQuery and Highcharts =
 
-*Supported by:* _wicked-charts-wicket15, wicked-charts-wicket6_
+*Supported by:* _wicked-charts-wicket14, wicked-charts-wicket15, wicked-charts-wicket6_
 ----
 
 Sometimes, it may be necessary to override the javascript depencencies that come with the Wicked Charts components.
