@@ -14,4 +14,5 @@
      * [ZoomEvent Zoom / Select a portion of a chart]
      * [LiveUpdatingCharts Live Updating Charts]
    * [ExtendingWickedCharts Extending Wicked Charts]
+   * [Localization Localization]
  * [FAQ Frequently Asked Questions]
