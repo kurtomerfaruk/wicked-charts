@@ -15,4 +15,5 @@
      * [LiveUpdatingCharts Live Updating Charts]
    * [ExtendingWickedCharts Extending Wicked Charts]
    * [Localization Localization]
+   * [UsingThemes Themes]
  * [FAQ Frequently Asked Questions]
