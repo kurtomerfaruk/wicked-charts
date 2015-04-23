@@ -1,0 +1,131 @@
+# wicked-charts 1.5.0 (2013-06-12) #
+  * [issue 31](https://code.google.com/p/wicked-charts/issues/detail?id=31): added support for Wicket 1.4 (thanks to Damiano Bolzoni for contributing the code). See the new maven artifact wicked-charts-wicket14.
+  * [issue 29](https://code.google.com/p/wicked-charts/issues/detail?id=29) / [issue 30](https://code.google.com/p/wicked-charts/issues/detail?id=30): fixed a NullPointerException
+  * [issue 32](https://code.google.com/p/wicked-charts/issues/detail?id=32): added a meaningful runtime exception if an unsupported feature was used
+  * [issue 28](https://code.google.com/p/wicked-charts/issues/detail?id=28): fixed javascript error when clicking on "reset zoom" button.
+  * [issue 26](https://code.google.com/p/wicked-charts/issues/detail?id=26): added "enabled" flag to Labels-option
+  * updated the Wicket dependency of wicked-charts-wicket6 to the current version 6.8.0
+  * [issue 25](https://code.google.com/p/wicked-charts/issues/detail?id=25): updated the default Highcharts dependency to version 3.0.2 (can be changed via JavaScriptResourceRegistry)
+
+# wicked-charts 1.4.3 (2013-03-03) #
+  * [issue 19](https://code.google.com/p/wicked-charts/issues/detail?id=19) / [issue 24](https://code.google.com/p/wicked-charts/issues/detail?id=24) (Wicket 6) - **API Break**: LiveDataSeries.update() is passed a LiveDataUpdateEvent object containing the Wicket 6 AjaxRequestTarget to support Ajax-Updates. See Guide at [LiveUpdatingCharts](LiveUpdatingCharts.md)
+  * [issue 20](https://code.google.com/p/wicked-charts/issues/detail?id=20) - JSON is now always created in english locale to avoid locale problems
+  * [issue 21](https://code.google.com/p/wicked-charts/issues/detail?id=21) - added support for ResetZoomButton options
+  * [issue 22](https://code.google.com/p/wicked-charts/issues/detail?id=22)  (Wicket 6) - re-organized javascript imports so that by default the JQuery version provided by Wicket is loaded. Also, highcharts-more.js will now be loaded from highcharts 2.3.5.
+
+
+# wicked-charts 1.4.2 (2013-01-27) #
+
+  * [issue 19](https://code.google.com/p/wicked-charts/issues/detail?id=19) - **API Break**: LiveDataSeries.update() now returns Point instead of Coordinate so that you can for example define the color of the point. To migrate simply return a Point object with the x and y values you previously defined in the Coordinate object. See [LiveUpdatingCharts](LiveUpdatingCharts.md).
+  * [issue 13](https://code.google.com/p/wicked-charts/issues/detail?id=13) - **API Break**: LiveDataSeries now takes in a JavaScriptParameters object. To migrate, simply ignore this parameter. By calling addJavaScriptParameters() you can now add Javascript expressions that are evaluated on the client side and transmitted to the server side update() method. See [LiveUpdatingCharts](LiveUpdatingCharts.md).
+  * [issue 12](https://code.google.com/p/wicked-charts/issues/detail?id=12) - added functionality to react to Highcharts "selection" (zooming) event on the server side. See [ZoomEvent](ZoomEvent.md).
+  * [issue 14](https://code.google.com/p/wicked-charts/issues/detail?id=14) - added color attribute to State
+
+# wicked-charts 1.4.1 (2013-01-06) #
+  * added client/server interaction to evaluate on the server side which point in a chart has been interacted with
+  * renamed some internal classes
+
+
+# wicked-charts 1.4.0 (2012-12-27) #
+  * **Attention**: the following classes of the public API have moved. You will have to update your imports:
+    * com.googlecode.wickedcharts.highcharts.Chart (in wicked-charts-wicket15) -> com.googlecode.wickedcharts.wicket15.highcharts.Chart
+    * com.googlecode.wickedcharts.highcharts.Chart (in wicked-charts-wicket6) -> com.googlecode.wickedcharts.wicket6.highcharts.Chart
+  * fixed [Issue 8](https://code.google.com/p/wicked-charts/issues/detail?id=8): javascript error "assignment to undeclared variable chart5\_drilldownOptions"
+  * fixed [issue 3](https://code.google.com/p/wicked-charts/issues/detail?id=3): automatically include highcharts-more.js for gauge charts
+  * fixed  [issue 6](https://code.google.com/p/wicked-charts/issues/detail?id=6): added support for global options for wicket15 and wicket6
+  * fixed [issue 5](https://code.google.com/p/wicked-charts/issues/detail?id=5): LiveDataSeries.update() may return null and thus skip an update interval
+  * moved some (internal) classes to other packages to reduce package cycles
+  * added chart type "columnrange"
+  * added chart type "arearange"
+  * added RangeSeries to accomodate for range charts
+  * added a couple more charts to the showcase
+  * changed Wicket dependency of wicked-charts-wicket6 and showcase to Wicket 6.4.0
+  * changed the default Highcharts dependency of wicked-charts-wicket6 and wicked-charts-wicket15 to Highcharts version 2.3.5 (can be overridden by calling JavaScriptResourceRegistry.getInstance().setHighchartsReference())
+
+
+# wicked-charts 1.3.1 (2012-12-06) #
+  * changed the scope of Wicket dependencies in wicked-charts-wicket6 and wicket-charts-wicket15 to "provided"
+  * added percentageSuffix, percentagePrefix, totalSuffix, totalPrefix, totalDecimals to Tooltip
+  * fixed a bug that produced 404 errors since "drilldown.js" was not included in the jar
+  * added gauge chart type
+  * added RedirectFunction as convenience class for creating links to other pages from within a chart
+
+# wicked-charts 1.3.0 #
+  * added JSF support, hence the name switched from wicket-charts to wicked-charts
+    * **Attention:** if you used wicket-charts and want to update to this version, you will have to update your code, since the package namespace has changed from com.googlecode.wicketcharts to com.googlecode.wickedcharts!
+  * changed the generic type of CoordinatesSeries from List of Numbers to Coordinates<Number, Number> to better match the needs
+  * added convenience vararg methods to all series classes
+  * included the showcase themes into the library
+  * you can define more than one X-Axis and Y-Axis now. Getter Methods in the Options class have been changed to get a list of Axis objects instead of getting a single Axis. Methods addxAxis and addyAxis have been added.
+  * added many more charts to the showcase, and with them some more options to support new Highcharts features
+  * Split the project up into several more artifacts to better manage the dependencies
+
+# wicket-charts 1.2.1 #
+  * Note that this release is not yet published in Maven central, so you have to download it <a href='http://code.google.com/p/wicket-charts/downloads/list'>here</a>
+  * fixed [Issue 64](https://code.google.com/p/wicked-charts/issues/detail?id=64) (Axis Labels were not rendered in JSON)
+
+# wicket-charts 1.2.0 #
+  * **Attention:** some classes have been renamed or moved to another package for better understanding. See the mapping table below to help with migrating your sources. The class interfaces are still compatible for the most part, they have just been renamed or moved.
+  * added builder pattern to all option classes for convenient building of options
+  * added theme support (see class com.googlecode.wicketcharts.highcharts.theme.Theme)
+  * added support for javascript functions (not connectable with Wicket AJAX yet)
+  * added support for CSS options
+  * added polar chart support
+  * added support for various color types (hex, highcharts-managed, linear gradient)
+  * when extending the options class, you can now use the @JsonIgnore annotation to exclude a field from JSON serialization
+  * fixed a bug where DummyOptions are rendered in JSON
+  * added many more options to support the following Highcharts features (among others).
+    * <a href='http://api.highcharts.com/highcharts#tooltip'><a href='http://api.highcharts.com/highcharts#tooltip'>http://api.highcharts.com/highcharts#tooltip</a></a>
+    * <a href='http://api.highcharts.com/highcharts#tooltip.style'><a href='http://api.highcharts.com/highcharts#tooltip.style'>http://api.highcharts.com/highcharts#tooltip.style</a></a>
+    * <a href='http://api.highcharts.com/highcharts#tooltip.formatter'><a href='http://api.highcharts.com/highcharts#tooltip.formatter'>http://api.highcharts.com/highcharts#tooltip.formatter</a></a>
+    * <a href='http://api.highcharts.com/highcharts#tooltip.positioner'><a href='http://api.highcharts.com/highcharts#tooltip.positioner'>http://api.highcharts.com/highcharts#tooltip.positioner</a></a>
+    * <a href='http://api.highcharts.com/highcharts#pane.background'><a href='http://api.highcharts.com/highcharts#pane.background'>http://api.highcharts.com/highcharts#pane.background</a></a>
+    * <a href='http://api.highcharts.com/highcharts#chart.style'><a href='http://api.highcharts.com/highcharts#chart.style'>http://api.highcharts.com/highcharts#chart.style</a></a>
+    * <a href='http://api.highcharts.com/highcharts#xAxis.dateTimeLabelFormats'><a href='http://api.highcharts.com/highcharts#xAxis.dateTimeLabelFormats'>http://api.highcharts.com/highcharts#xAxis.dateTimeLabelFormats</a></a>
+    * <a href='http://api.highcharts.com/highcharts#exporting.buttons'><a href='http://api.highcharts.com/highcharts#exporting.buttons'>http://api.highcharts.com/highcharts#exporting.buttons</a></a>
+    * <a href='http://api.highcharts.com/highcharts#exporting.type'><a href='http://api.highcharts.com/highcharts#exporting.type'>http://api.highcharts.com/highcharts#exporting.type</a></a>
+    * <a href='http://api.highcharts.com/highcharts#pane'><a href='http://api.highcharts.com/highcharts#pane'>http://api.highcharts.com/highcharts#pane</a></a>
+    * <a href='http://www.highcharts.com/component/content/article/2-news/46-gauges-ranges-and-polar-charts-in-beta'><a href='http://www.highcharts.com/component/content/article/2-news/46-gauges-ranges-and-polar-charts-in-beta'>http://www.highcharts.com/component/content/article/2-news/46-gauges-ranges-and-polar-charts-in-beta</a></a>
+    * <a href='http://api.highcharts.com/highcharts#tooltip'><a href='http://api.highcharts.com/highcharts#tooltip'>http://api.highcharts.com/highcharts#tooltip</a></a>
+
+## Mapping from 1.1.0 classes to 1.2.0 classes ##
+|**Class in version 1.1.0**|**New class in version 1.2.0**|
+|:-------------------------|:-----------------------------|
+|com.googlecode.wicketcharts.highcharts.options.Label|com.googlecode.wicketcharts.highcharts.options.Labels|
+|com.googlecode.wicketcharts.highcharts.options.LegendOptions|com.googlecode.wicketcharts.highcharts.options.Legend|
+|com.googlecode.wicketcharts.highcharts.options.NamedPoint|com.googlecode.wicketcharts.highcharts.options.series.Point|
+|com.googlecode.wicketcharts.highcharts.options.NamedPointSeriesOptions|com.googlecode.wicketcharts.highcharts.options.series.PointSeries|
+|com.googlecode.wicketcharts.highcharts.options.PlotBands|com.googlecode.wicketcharts.highcharts.options.PlotBand|
+|com.googlecode.wicketcharts.highcharts.options.PlotLines|com.googlecode.wicketcharts.highcharts.options.PlotLine|
+|com.googlecode.wicketcharts.highcharts.options.PointSeriesOptions|com.googlecode.wicketcharts.highcharts.options.series.CoordinatesSeries|
+|com.googlecode.wicketcharts.highcharts.options.SeriesOptions|com.googlecode.wicketcharts.highcharts.options.series.Series <br />(the method setSeries has been removed, use addSeries instead)|
+|com.googlecode.wicketcharts.highcharts.options.SimpleSeriesOptions|com.googlecode.wicketcharts.highcharts.options.series.SimpleSeries|
+|com.googlecode.wicketcharts.highcharts.HighChartContainer|com.googlecode.wicketcharts.highcharts.Chart|
+
+
+
+
+# wicket-charts 1.1.0 #
+  * added many more options to support the following Highcharts features.
+    * <a href='http://api.highcharts.com/highcharts#navigation.buttonOptions'><a href='http://api.highcharts.com/highcharts#navigation.buttonOptions'>http://api.highcharts.com/highcharts#navigation.buttonOptions</a></a>
+    * <a href='http://api.highcharts.com/highcharts#plotOptions.pie.center'><a href='http://api.highcharts.com/highcharts#plotOptions.pie.center'>http://api.highcharts.com/highcharts#plotOptions.pie.center</a></a>
+    * <a href='http://api.highcharts.com/highcharts#plotOptions.column.dataLabels'><a href='http://api.highcharts.com/highcharts#plotOptions.column.dataLabels'>http://api.highcharts.com/highcharts#plotOptions.column.dataLabels</a></a>
+    * <a href='http://api.highcharts.com/highcharts#global'><a href='http://api.highcharts.com/highcharts#global'>http://api.highcharts.com/highcharts#global</a></a>
+    * <a href='http://api.highcharts.com/highcharts#loading'><a href='http://api.highcharts.com/highcharts#loading'>http://api.highcharts.com/highcharts#loading</a></a>
+    * <a href='http://api.highcharts.com/highcharts#plotOptions.area.marker'><a href='http://api.highcharts.com/highcharts#plotOptions.area.marker'>http://api.highcharts.com/highcharts#plotOptions.area.marker</a></a>
+    * <a href='http://api.highcharts.com/highcharts#navigation'><a href='http://api.highcharts.com/highcharts#navigation'>http://api.highcharts.com/highcharts#navigation</a></a>
+    * <a href='http://api.highcharts.com/highcharts#plotOptions.pie.innerSize'><a href='http://api.highcharts.com/highcharts#plotOptions.pie.innerSize'>http://api.highcharts.com/highcharts#plotOptions.pie.innerSize</a></a>
+    * <a href='http://api.highcharts.com/highcharts#yAxis.plotBands'><a href='http://api.highcharts.com/highcharts#yAxis.plotBands'>http://api.highcharts.com/highcharts#yAxis.plotBands</a></a>
+    * <a href='http://api.highcharts.com/highcharts#yAxis.plotLines'><a href='http://api.highcharts.com/highcharts#yAxis.plotLines'>http://api.highcharts.com/highcharts#yAxis.plotLines</a></a>
+    * <a href='http://api.highcharts.com/highcharts#plotOptions'><a href='http://api.highcharts.com/highcharts#plotOptions'>http://api.highcharts.com/highcharts#plotOptions</a></a>
+    * <a href='http://api.highcharts.com/highcharts#plotOptions.area.marker.states'><a href='http://api.highcharts.com/highcharts#plotOptions.area.marker.states'>http://api.highcharts.com/highcharts#plotOptions.area.marker.states</a></a>
+    * <a href='http://api.highcharts.com/highcharts#plotOptions.area.marker.symbol'><a href='http://api.highcharts.com/highcharts#plotOptions.area.marker.symbol'>http://api.highcharts.com/highcharts#plotOptions.area.marker.symbol</a></a>
+  * added a possibility to take influence on the JSON serializer, e.g. to turn on pretty printing of the Highcharts options
+  * turned off JSON pretty printing by default
+  * added a DummyOptions-Element to mark not yet supported features
+  * added javadoc with links to the Highcharts API
+  * added more charts to the showcase application
+
+# wicket-charts 1.0.0 #
+
+  * base functionality for including Highcharts charts into a Wicket application

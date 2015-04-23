@@ -1,0 +1,94 @@
+# General Concept #
+Wicked Charts does not create charts itself, but delegates the creation of the charts to the Highcharts JavaScript library. Wicked Charts provides you with two things:
+  * Java classes to define the content of a chart, starting from the Options class
+  * Components for Wicket and JSF which are able to call Highcharts to display a chart defined by you
+
+# Defining a Chart #
+To define the contents of a chart, you simply have to instantiate an Options object and use its setter methods to define the data and metadata you want. This Options object is then passed into a web component that takes care of the rendering.
+
+For details on the effects of each option, please refer to the <a href='http://api.highcharts.com/highcharts'>Highcharts API reference</a>. The naming of the options was adopted from there. If you come across an Highcharts option that Wicked Charts doesn't support yet, please <a href='http://code.google.com/p/wicked-charts/issues/list'>create an issue</a>.
+
+The following example creates a line chart displaying the months from January to December on the X-Axis and the average temperature in this month that has been measured in Tokyo and New York.
+
+```
+Options options = new Options();
+
+    options
+        .setChartOptions(new ChartOptions()
+            .setType(SeriesType.LINE));
+
+    options
+        .setTitle(new Title("My very own chart."));
+
+    options
+        .setxAxis(new Axis()
+            .setCategories(Arrays
+                .asList(new String[] { "Jan", "Feb", "Mar", "Apr", "May",
+                    "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" })));
+
+    options
+        .setyAxis(new Axis()
+            .setTitle(new Title("Temperature (C)")));
+
+    options
+        .setLegend(new Legend()
+            .setLayout(LegendLayout.VERTICAL)
+            .setAlign(HorizontalAlignment.RIGHT)
+            .setVerticalAlign(VerticalAlignment.TOP)
+            .setX(-10)
+            .setY(100)
+            .setBorderWidth(0));
+
+    options
+        .addSeries(new SimpleSeries()
+            .setName("Tokyo")
+            .setData(
+                Arrays
+                    .asList(new Number[] { 7.0, 6.9, 9.5, 14.5, 18.2, 21.5,
+                        25.2, 26.5, 23.3, 18.3, 13.9, 9.6 })));
+
+    options
+        .addSeries(new SimpleSeries()
+            .setName("New York")
+            .setData(
+                Arrays
+                    .asList(new Number[] { -0.2, 0.8, 5.7, 11.3, 17.0, 22.0,
+                        24.8, 24.1, 20.1, 14.1, 8.6, 2.5 })));
+```
+
+# Adding a Chart to your Wicket Page #
+First, add the dependency to the current version of **wicked-charts-wicket6**, **wicked-charts-wicket15** or **wicked-charts-wicket14** to your classpath, depending on which version of Wicket you are using.
+
+To add a chart to a page in a Wicket application, you need to add a div component to your HTML page, like this:
+
+```
+<div wicket:id="chart"/>
+```
+
+In your Wicket page class you can then create an Options object and pass it into an instance of the Chart component and add this component to the page. Done.
+
+```
+Options options = new Options();
+options.setTitle(new Title("My Chart"));
+... // add any chart configuration you like, see above
+add(new Chart("chart", options));
+```
+
+# Adding a Chart to your JSF Page #
+First, add the dependency to the current version of **wicked-charts-jsf21** to your classpath.
+
+The following example shows some variations of how you can add a chart to your JSF page. For a description of all properties of the `<wc:chart/>`-component, see the setter methods of the <a href='http://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/UIChart.html'>UIChart</a> class.
+
+The Java class behind "myBean" must provide the Options object you want to have displayed.
+
+```
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:wc="http://googlecode.com/wickedcharts">
+    <body>
+        <wc:chart id="chart1" options="#{myBean.options}" theme="#{myBean.theme}" />
+        <wc:chart id="chart2" options="#{myBean.options}" themeUrlRef="#{myBean.themeUrlRef}" />
+        <wc:chart id="chart3" options="#{myBean.options}" themeUrlRef="js/myTheme.js" />
+        <wc:chart id="chart4" options="#{myBean.options}" themeUrlRef="http://js.mySite.com/myTheme.js" />
+    </body>
+</html>
+```

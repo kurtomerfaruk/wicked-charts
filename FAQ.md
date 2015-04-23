@@ -1,0 +1,30 @@
+# Frequently Asked Questions #
+
+## Highcharts has a different license than wicked-charts. Is that a problem? ##
+The Highcharts JS library is not shipped with wicked-charts. wicked-charts simply references the publicly available JS library from highcharts.com. If you want to use wicked-charts for commercial projects, consult http://shop.highsoft.com/highcharts.html and buy a license.
+
+## The javascript files for the JQuery and Highcharts library are loaded from the web by default. How can I use my own versions of these javascript files? ##
+
+Simply call `JavaScriptResourceRegistry.setJQueryReference(...)` from the init() method of your wicket application and provide a new URL or a reference to a javascript file in your own packages.
+
+## How can I set a Color explicitly to (javascript) null? ##
+See java class <a href='http://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/color/NullColor.html'>NullColor</a>.
+
+## What browsers are supported by wicked-charts? ##
+Since wicked-charts delegates the task of rendering the charts to Highcharts, wicked-charts supports the same browsers as Highcharts. See the <a href='http://www.highcharts.com/documentation/compatibility'>Highcharts compatibility tables</a>.
+
+## Why doesn't the showcase work with IE? ##
+The showcase relies on some Jquery-UI & CSS magic that apparently does not work in IE. Use the following link instead for a simpler showcase that works in IE: http://wicked-charts.appspot.com/simple
+
+## My Live-Data Chart does not update after a page refresh ##
+Enable development mode and check in the AJAX Debug window if you get the following error message: "Ajax request stopped because of precondition check". If so, you need to provide your chart component with an HTML "id" attribute, so the Javascript knows which component to update after the page reload.
+
+## What is the difference between wicked-charts-wicket15, wicked-charts-wicket6 and wicked-charts-jsf12? ##
+Each is an implementation of Wicked Charts that provide a component for one of the following java-based web frameworks:
+  * Wicket 1.5.x
+  * Wicket 6.x
+  * JSF 2.1
+These components can then be used in a web project using the respective framework to implement charts in an easy fashion. If you use Maven, you only have to include the component matching to your framework and the dependency to wicked-charts-highcharts will be added automatically.
+
+## Can I use Wicked Charts in a non-Java web application? ##
+No. Wicked Charts is Java. You can use the Highcharts JavaScript framework directly, though.

@@ -1,0 +1,5 @@
+# Guide to the Features of Wicked Charts #
+
+This section of the wiki provides Guides that show how to use the features of Wicked Charts. Select the feature you want to learn about in the left-side navigation menu.
+
+Note that while Wicked Charts currently can be used for JSF 2.1, Wicket 1.5.x and Wicket 6.x applications, not all features are provided for each framework. Hence, each feature guide starts with a statement which frameworks are supported. In short, the Wicket 6 component supports almost all features while the JSF component currently only supports basic features.

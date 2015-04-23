@@ -1,0 +1,26 @@
+# Advanced Chart Types #
+
+**Supported by:** _wicked-charts-wicket14, wicked-charts-wicket15, wicked-charts-wicket6, wicked-charts-jsf21_
+
+---
+
+
+The advances chart types need the javascript file highcharts\_more.js to work.
+
+The advances chart types are:
+  * gauge charts
+  * column range charts
+  * area range charts
+  * bubble charts
+
+All chart types and the java code needed to create them can be viewed online in the [Showcase](http://wicked-charts.appspot.com).
+
+## Using Wicket ##
+You have nothing to care about, since the Wicket components take care of loading the correct javascript files needed for the chart types.
+
+## Using JSF ##
+You have to include the following javascript files manually into your page:
+  * current version of jQuery
+  * http://code.highcharts.com/highcharts.js
+  * http://code.highcharts.com/highcharts-more.js
+  * http://code.highcharts.com/modules/exporting.js (if you have added enabled [ExportingOptions](https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/ExportingOptions.html) to your chart)

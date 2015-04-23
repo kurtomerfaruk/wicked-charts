@@ -1,0 +1,17 @@
+# Links on Points #
+
+**Supported by:** _wicked-charts-wicket14, wicked-charts-wicket15, wicked-charts-wicket5, wicked-charts-jsf21_
+
+---
+
+
+You can redirect the user to another url when he clicks on a point in a series of your chart by using the class [RedirectFunction](https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/functions/RedirectFunction.html):
+
+```
+
+options.addSeries(new PointSeries()
+  .setData(new Point(1,2)
+    .setEvents(new Events()
+      .setClick(new RedirectFunction("http://wicked-charts.googlecode.com"))));
+
+```

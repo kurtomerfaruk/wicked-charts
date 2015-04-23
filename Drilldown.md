@@ -1,0 +1,23 @@
+# Drilldown #
+
+**Supported by:** _wicked-charts-wicket14, wicked-charts-wicket15, wicked-charts-wicket6_
+
+The term "drilldown" actually defines the act of moving from a general chart to a more specific chart that shows more detailed information that the one before. Here, it simply means clicking on a chart with the result that the chart changes its content. Technically, it means that the [Options](https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/Options.html) of the chart are exchanged when the user clicks on a certain point of the chart.
+
+For each point in a chart, drilldown can be activated separately, by adding a [DrilldownPoint](https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/drilldown/DrilldownPoint.html) instead of a normal [Point](https://wicked-charts.googlecode.com/svn/trunk/wicked-charts-parent/apidocs/com/googlecode/wickedcharts/highcharts/options/series/Point.html) to a series:
+
+```
+// define the options to appear initially
+Options mainOptions = ...;
+
+// define the options to appear when the point is clicked
+Options drilldownOptions = ...;
+
+// define the point that should trigger the drilldown on click
+mainOptions.addSeries(new PointSeries()
+  . addPoint(new DrilldownPoint(options, drilldownOptions)
+    .setY(5));
+
+```
+
+**Please note that if you define many DrilldownPoints each pointing to different drilldown-Options in a single chart each drilldown options will be rendered into the page as JSON object. That means that the drilldown feature does not scale endlessly!**

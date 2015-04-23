@@ -1,0 +1,5 @@
+# Using Wicked Charts with SSL #
+
+The Wicket components of Wicked Charts by default load the jQuery and Highcharts javascript files from the web which causes problems if you want to access your application via SSL.
+
+To solve this problem, you have to download the javascript files yourself and provide them to the JavaScriptResourceRegistry class as described [here](DifferentJQueryAndHighchartsVersion.md)
